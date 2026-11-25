@@ -1,0 +1,67 @@
+{
+  "name": "@webship-js/openproject-steps",
+  "version": "2.0.0",
+  "description": "Cucumber step definitions for OpenProject, the open-source project management software, a pack for webship-js (Playwright and Cucumber): logging in and out and its refusals, a project and who may see it, the work package list, one work package (its status through the workflow, its comments, the time logged on it, its assignee), a new work package, and the backlog with its sprints. Test content is made and removed through the site's own API, so a run leaves the site as it found it.",
+  "main": "tests/step-definitions/openproject-helpers.js",
+  "files": [
+    "tests/step-definitions/",
+    "tests/features/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:dry": "cucumber-js --config cucumber.js --dry-run",
+    "test:examples": "node tests/check-examples.js",
+    "test:paths": "node tests/check-paths.js",
+    "test:must-fail": "node tests/check-must-fail.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "generate-reports": "generate-reports",
+    "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js"
+  },
+  "keywords": [
+    "webship-js",
+    "openproject",
+    "project-management",
+    "work-packages",
+    "agile",
+    "scrum",
+    "time-tracking",
+    "cucumber",
+    "cucumber-js",
+    "playwright",
+    "bdd",
+    "gherkin",
+    "step-definitions",
+    "e2e-testing"
+  ],
+  "author": "Webship.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webship/openproject-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webship/openproject-steps/issues"
+  },
+  "homepage": "https://github.com/webship/openproject-steps#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 24.0"
+  },
+  "peerDependencies": {
+    "webship-js": "^2.0.16"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "webship-js": "^2.0.17"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^12"
+  }
+}
