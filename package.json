@@ -1,6 +1,6 @@
 {
   "name": "@webship-js/openproject-steps",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Cucumber step definitions for OpenProject, the open-source project management software, a pack for webship-js (Playwright and Cucumber): logging in and out and its refusals, a project and who may see it, the work package list, one work package (its status through the workflow, its comments, the time logged on it, its assignee), a new work package, and the backlog with its sprints. Test content is made and removed through the site's own API, so a run leaves the site as it found it.",
   "main": "tests/step-definitions/openproject-helpers.js",
   "files": [
